@@ -70,8 +70,8 @@ li{
 }
 
 #profile-pic{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -173,6 +173,29 @@ li{
     color: white;
 }
 
+#certification-badges{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.cert-badge{
+    height: 80px;
+    width: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.cert-badge:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
 @media(max-width:600px){
 
     .section--page{
@@ -188,8 +211,8 @@ li{
     }
 
     #profile-pic{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 
     #wrapper--hero{
@@ -199,5 +222,14 @@ li{
     .card--work-history{
         border-left: none;
         padding-left: 0;
+    }
+
+    #certification-badges{
+        justify-content: center;
+        gap: 0.5em;
+    }
+
+    .cert-badge{
+        height: 60px;
     }
 }
